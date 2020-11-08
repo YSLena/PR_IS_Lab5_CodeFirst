@@ -5,8 +5,8 @@ using System.Text;
 namespace Lab5_CodeFirst
 {
     /*
-     * TODO 0. Цель работы - изучение технологии Entity Framework Code First
-     * https://msdn.microsoft.com/en-us/library/jj193542(v=vs.113).aspx
+     * TODO 0. Цель работы - изучение технологии Entity Framework Core Code First
+     * https://docs.microsoft.com/ru-ru/ef/core/modeling/entity-types?tabs=data-annotations
      */
 
     /*
