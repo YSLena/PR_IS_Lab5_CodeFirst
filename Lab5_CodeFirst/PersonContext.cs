@@ -9,6 +9,7 @@ namespace Lab5_CodeFirst
     {
         public PersonContext()
         {
+            Database.EnsureDeleted();
             // Метод EnsureCreated() создаст БД при первом использовании
             Database.EnsureCreated();
         }
