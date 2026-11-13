@@ -10,7 +10,7 @@ namespace Lab5_CodeFirst
         public PersonContext()
         {
             Database.EnsureDeleted();
-            // Метод EnsureCreated() создаст БД при первом использовании
+            // Метод EnsureCreated() створить БД під час першого використання
             Database.EnsureCreated();
         }
 
@@ -22,12 +22,12 @@ namespace Lab5_CodeFirst
         {
             if (!optionsBuilder.IsConfigured)
             {
-                /*
-                 * В строке соединения необходимо указать параметр Database
-                 * В AttachDbFilename необходимо указать путь, по которому вы хотите создать БД
-                 * Путь должен существовать, а сама БД - нет
-                 * Если нужно переименовать БД, измените названия в параметрах Database и AttachDbFilename
-                 */
+            /* 
+            * У рядку з'єднання необхідно вказати параметр Database 
+            * В AttachDbFilename необхідно вказати шлях, яким ви хочете створити БД 
+            * Шлях має існувати, а сама БД - ні 
+            * Якщо потрібно перейменувати БД, змініть назви в параметрах Database та AttachDbFilename 
+            */
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
                 optionsBuilder.UseSqlServer(@"Data Source=(LocalDB)\MSSQLLocalDB;Database=Person1;AttachDbFilename=E:\Users\Lena\NET\DB\Person1.mdf;Integrated Security=True;Connect Timeout=30");
             }
